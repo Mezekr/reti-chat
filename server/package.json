@@ -1,0 +1,11 @@
+{
+	"name": "reti-chat-server",
+	"version": "1.0.0",
+	"description": "A real-time chat web app",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Mezekr W.",
+	"license": "ISC"
+}
