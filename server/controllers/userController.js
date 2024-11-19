@@ -11,7 +11,7 @@ router.get('/', authMiddleware, async (req, res) => {
 			data: user,
 		});
 	} catch (error) {
-		res.send({
+		res.status(400).send({
 			message: error.message,
 			status: false,
 		});
@@ -27,7 +27,7 @@ router.get('/get-all-users', authMiddleware, async (req, res) => {
 			data: users,
 		});
 	} catch (error) {
-		res.send({
+		res.status(400).send({
 			message: error.message,
 			status: false,
 		});
