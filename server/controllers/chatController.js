@@ -1,4 +1,4 @@
-const router = required('express').Router();
+const router = require('express').Router();
 const authMiddleware = require('./../middlewares/authMiddleware');
 const chat = require('./../models/chat');
 
