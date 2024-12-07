@@ -55,7 +55,7 @@ router.post('/login', async (req, res) => {
 
 		//3. if user exists & password matches create JWT token
 		const token = jwt.sign({ userId: user._id }, process.env.SECRET_KEY, {
-			expiresIn: '1d',
+			expiresIn: '15d',
 		});
 
 		res.status(200).send({
